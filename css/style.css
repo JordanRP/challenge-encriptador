@@ -1,0 +1,64 @@
+body{
+    background-color: #EFF1FA;
+    color: #0A3871;
+    align-items: center;
+}
+.container{
+    padding: 100px;
+    display:grid;
+    grid-template-areas:    "head head"
+                            "menu main"
+                            "foot foot";
+    text-align: center;
+    box-sizing: border-box;
+}
+h1{
+ grid-area: head;
+ font-size: 60px;
+}
+.container-encriptar{
+    height: 600px;
+    grid-area: menu;
+    text-align: center;
+}
+
+.container-encriptado{
+    background-color: white;
+    height: 600px;
+    width: 300px;
+    grid-area: main;
+    border-radius: 20px;
+    display: inline;
+    text-align: center;
+    
+}
+.btn{
+    border-radius: 20px;
+    width: 240px;
+    height: 80px;
+    background-color: #0A3871;
+    color: #EFF1FA;
+    padding: 10px;
+}
+.btn-desencriptar{
+    width: 240px;
+    height: 80px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #CED4DA;
+    color: #0A3871;
+    padding: 10px;  
+    margin-left: 20px;
+}
+.textArea{
+    background-color: transparent;
+    border: transparent;
+    resize: none;
+    outline: none;
+    width: 100%;
+    display: block;
+    padding: 36px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+

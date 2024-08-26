@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    <title>Desafio encriptador de texto</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Desafio encriptador de Texto</h1>
+        <div class="container-encriptar">
+            <textarea class="textArea" id="textoEncriptar"placeholder="escribe lo que quieras encriptar"></textarea><br>
+            <div class="botones">
+                <button onclick="encriptarTexto();" class="btn" id="btnEncriptar"> Encriptar</button>
+                <button onclick="desencriptarTexto();" class="btn-desencriptar" id="btnDesencriptar"> Desencriptar</button>
+            </div>
+        </div>
+        <div class="container-encriptado">
+            <p id="textoEncriptado"></p>
+            <h3></h3>
+            <button class="btn" id="copiarTexto" onclick="copiarTexto('textoEncriptado');">Copiar</button>
+        </div>
+    </div>
+    <script src="./js/scripts.js" ></script>
+</body>
+</html>
